@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Trabalhando com Tabelas</h1>
+    <p>No .HTML, os dados tabulares são aqueles que podem ser representados visualmente, em forma de tabela.</p>
+    <p>A elaboração de uma tabela consiste em uma combinação de linhas e colunas, resultando em uma forma objetiva, e ordenada, de expor as informações.</p>
+    <h2>Tabela Simples:</h2>
+    <table border="1"> <!--Não é necessário adicionar o atributo "Border", pois podemos modificar no CSS-->
+        <tr>
+            <!--Table Row (Linha)-->
+            <td>Violão</td> <!--Table Data Cell (Célula de Tabela)-->
+            <td>Guitarra</td>
+        </tr>
+        <tr>Alguma coisa!
+            <td>Violino</td>
+            <td>Piano</td>
+        </tr>
+    </table>
+    <h2>Tabela com Título</h2>
+    <table>
+        <tr>
+            <th>Instrumentos de Corda</th>
+            <th>Instrumentos de Sopro</th>
+        </tr>
+        <tr>
+            <td>Violino</td>
+            <td>Corneta</td>
+        </tr>
+    </table>
+    <h2>Cabeçalho Vertical</h2>
+    <table>
+        <tr>
+            <th>Livros</th>
+            <td>Arte Moderna</td>
+            <td>Programação</td>
+        </tr>
+        <tr>
+            <th>Quantidade</th>
+            <td>500 unidades</td>
+            <td>600 unidades</td>
+        </tr>
+    </table>
+    <h2>Cabeçalho, Corpo e Rodapé</h2>
+    <p>Estes elementos criam ações dentro da tabela, que podem receber uma formação diferenciada. Útil para a formatação de tabelas com muitos dados.</p>
+    <table border="1">
+        <caption>Tabela thead / tfoot / tbody</caption>
+        <thead>
+            <tr>
+                <th colspan="2">Coluna 1</th> <!--colspan Mescla quantidade de colunas-->
+                <th>Coluna 2</th>
+                <!--<th>Coluna 3</th>-->
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Resultado 1</td>
+                <td>Resultado 2</td>
+                <td>Resultado 3</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Conteúdo 1</td>
+                <td>Conteúdo 2</td>
+                <td>Conteúdo 3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Conteúdo A</td> <!-- rowspan Mescla quantidade de Linhas-->
+                <td>Conteúdo B</td>
+                <td>Conteúdo C</td>
+            </tr>
+            <tr>
+                <td>Conteúdo D</td>
+                <td>Conteúdo E</td>
+                <!--<td>Conteúdo F</td>-->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
