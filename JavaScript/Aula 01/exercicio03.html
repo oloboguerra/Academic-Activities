@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+</head>
+<body>
+    <h1>Isso é JavaScript</h1>
+    <script>
+        "use strict"; /*Somente este script será usado com este comando*/
+        //Declarar as variáveis
+        var curso = "Desenvolvedor Front-End"
+        var curso1 = "Desenvolvedor Back-End"
+        var data = new Date() /*instanciando as funções*/
+        var dia = data.getDate()
+        var mes = data.getMonth()+1
+        var ano = data.getFullYear()
+        var dataCompletaSimplificada = data.toLocaleDateString()//dia+"/" +mes+"/" +ano
+        //alert('Funcionou!') - este comando serve como uma carta CORINGA, para verificar se o código está funcionando, ou não
+        document.write(curso)
+        document.write(dataCompletaSimplificada) /*concatenação (+) junta texto com variável, ou valores, ou somente variáveis*/
+        console.log("Hoje é dia: "+dia)
+        console.log("Hoje é o mês: "+mes)
+    </script>
+</body>
+</html>
