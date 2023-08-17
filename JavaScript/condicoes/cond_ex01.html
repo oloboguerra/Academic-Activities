@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Trabalhando com condições - If</h1>
+<p id="dia">Bom Dia!</p>
+<p id="resultado"></p>
+
+    <script>
+        let idade = 59
+
+if (new Date().getHours() >=14){
+    document.getElementById("dia").innerHTML = "Boa Tarde!"
+}
+
+/*if (idade < 16){
+document.getElementById("resultado").innerHTML = "Não pode votar!"
+} else{
+    document.getElementById("resultado").innerHTML = "pode votar!"
+}*/
+
+
+if (idade <= 16 || idade >= 60 ){
+document.getElementById("resultado").innerHTML = "Não pode votar!"
+} else{
+    document.getElementById("resultado").innerHTML = "pode votar!"
+}
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
