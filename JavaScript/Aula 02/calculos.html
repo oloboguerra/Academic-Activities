@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos</title>
+</head>
+<body>
+    <script>
+        var soma = 5 - 9 *2
+        var resultado = soma * ((3+4)/2)
+        var IMC = Number.parseFloat(window.prompt("Qual sua altura?"))
+        var IMC2 = Number.parseFloat(window.prompt("Qual seu peso?"))
+        var IMCresultado = IMC2/(IMC*IMC)
+        alert("O seu IMC é de "+IMCresultado.toFixed(1))
+        var mercadoria = Number.parseFloat(window.prompt("Quanto custou sua mercadoria?"))
+        var mercadoriaResultado = mercadoria+(5%mercadoria)        
+        document.write("O resultado do meu IMC (altura * altura / peso) é "+IMCresultado.toFixed(1)) /*.toFixed serve para limitar a quantidade de casas exibidas, em números quebrados*/
+        document.write("<br>O resultado da conta 5-9*2 é de "+soma +", somado com 7+2 resulta em "+resultado)
+        document.write("<br>Para obter um lucro de 5%, você deverá vender sua mercadoria por "+mercadoriaResultado.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}))
+    </script>
+</body>
+</html>
